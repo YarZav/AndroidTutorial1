@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpUserActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/yeonsung"
-        android:text="Login To Your  Account"
+        android:text="Sign Up Here"
         android:textAlignment="center"
         android:textColor="@color/startGreenColor"
         android:textSize="20sp"
@@ -59,7 +59,26 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <EditText
-        android:id="@+id/sign_in_email"
+        android:id="@+id/sign_up_user_name"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="15dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/lato"
+        android:hint="Name"
+        android:inputType="text"
+        android:outlineSpotShadowColor="@color/startGreenColor"
+        android:paddingLeft="20dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/sign_up_email"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="16dp"
@@ -75,10 +94,10 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_user_name" />
 
-    <EditText
-        android:id="@+id/sign_in_password"
+     <EditText
+        android:id="@+id/sign_up_password"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="12dp"
@@ -94,7 +113,7 @@
         android:outlineSpotShadowColor="@color/startGreenColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_in_email" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_email" />
 
     <TextView
         android:id="@+id/textView9"
@@ -107,14 +126,14 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_in_password" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_password" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Continue With"
+        android:text="SignUp With"
         android:textSize="20sp"
         android:fontFamily="@font/yeonsung"
         android:textStyle="bold"
@@ -172,7 +191,7 @@
         android:outlineAmbientShadowColor="@color/startGreenColor"
         android:outlineSpotShadowColor="@color/startGreenColor"
         android:shadowColor="@color/startGreenColor"
-        android:text="Login"
+        android:text="Create Account"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="22sp"
@@ -182,11 +201,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
-        android:id="@+id/go_sign_up_user"
+        android:id="@+id/go_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Don't Heve An Account?"
+        android:text="Already Heve An Account?"
         android:textColor="@color/startGreenColor"
         android:textSize="14sp"
         android:fontFamily="@font/lato"
